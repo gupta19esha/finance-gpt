@@ -106,29 +106,6 @@ AI-Driven Personal Finance Advisor is a web application that provides personaliz
    - Use the chatbot for quick financial queries
    - Analyze what-if scenarios for financial planning
 
-## Project Structure
-
-```
-ai-finance-advisor/
-│
-├── frontend/
-│   ├── public/
-│   └── src/
-│       ├── components/
-│       ├── services/
-│       ├── store/
-│       ├── App.js
-│       └── index.js
-│       └── theme.js
-└── backend/
-    ├── controllers/
-    ├── models/
-    ├── routes/
-    ├── utils/
-    ├── middleware/
-    └── server.js
-```
-
 ## API Endpoints
 
 - `/api/auth/register` - User registration
