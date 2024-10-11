@@ -57,7 +57,10 @@ AI-Driven Personal Finance Advisor is a web application that provides personaliz
    - For the frontend:
       ```
       cd frontend
-      npm install react react-dom react-router-dom @reduxjs/toolkit react-redux @chakra-ui/react @emotion/react @emotion/styled framer-motion axios react-markdown recharts
+      npm install react react-dom react-router-dom @reduxjs/toolkit
+      npm install react-redux @chakra-ui/react
+      npm install @emotion/react @emotion/styled
+      npm install framer-motion axios react-markdown recharts
       ```
 
       This will install the following key dependencies:
