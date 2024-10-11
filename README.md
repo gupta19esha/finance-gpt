@@ -28,8 +28,6 @@ AI-Driven Personal Finance Advisor is a web application that provides personaliz
 - OpenAI API key
 # AI-Driven Personal Finance Advisor
 
-[... previous content remains the same ...]
-
 ### Installation
 
 1. Clone the repository:
