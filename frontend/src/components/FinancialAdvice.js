@@ -15,7 +15,7 @@ import {
   Button,
   Text,
   useToast,
-  useColorModeValue, // Import useColorModeValue
+  useColorModeValue,
 } from '@chakra-ui/react';
 
 const FinancialAdvice = () => {
