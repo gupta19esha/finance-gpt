@@ -25,7 +25,6 @@ AI-Driven Personal Finance Advisor is a web application that provides personaliz
 - Node.js (version 14 or later)
 - MongoDB
 - OpenAI API key
-# AI-Driven Personal Finance Advisor
 
 ### Installation
 
