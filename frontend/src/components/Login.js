@@ -62,9 +62,9 @@ const Login = () => {
         bg={useColorModeValue('gray.50', 'gray.800')}
         >
 
-      <Stack spacing={6} maxW={'md'} w={'full'} mx={'auto'} py={8} px={4}> {/* Reduced spacing and size */}
+      <Stack spacing={6} maxW={'md'} w={'full'} mx={'auto'} py={8} px={4}> 
         <Stack align={'center'}>
-          <Heading fontSize={'2xl'}>Sign in to your account</Heading> {/* Reduced font size */}
+          <Heading fontSize={'2xl'}>Sign in to your account</Heading>
           <Text fontSize={'md'} color={'gray.600'}>
             to enjoy all of our cool <Link color={'blue.400'}>features</Link> ✌️
           </Text>
