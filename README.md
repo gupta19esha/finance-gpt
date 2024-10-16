@@ -8,7 +8,6 @@ AI-Driven Personal Finance Advisor is a web application that provides personaliz
 - Personalized financial advice using AI
 - Financial snapshot and goal tracking
 - AI-powered chatbot for financial queries
-- What-if scenario analysis for financial planning
 
 ## Technologies Used
 
