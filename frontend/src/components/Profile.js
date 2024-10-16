@@ -66,9 +66,9 @@ const Profile = () => {
         <HStack justify="space-between">
           <Heading size="xl">User Profile</Heading>
           <Button 
-            colorScheme="brand" // Use the brand color scheme
-            bg="brand.primary" // Set background to black
-            color={buttonColor} // Set text color based on color mode
+            colorScheme="brand" 
+            bg="brand.primary"
+            color={buttonColor} 
             onClick={handleEditClick}
           >
             Edit Profile
