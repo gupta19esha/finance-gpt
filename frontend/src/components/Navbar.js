@@ -25,10 +25,10 @@ export default function NavBar() {
         borderStyle={'solid'}
         borderColor={useColorModeValue('gray.200', 'gray.900')}
         align={'center'}
-        justify={'center'} // Center the content
+        justify={'center'}
         w="100%"
       >
-        <Flex flex={1}></Flex> {/* Left Flex to push heading to the center */}
+        <Flex flex={1}></Flex>
 
         <Heading 
           as={RouterLink}
@@ -42,7 +42,7 @@ export default function NavBar() {
           AI Finance Advisor
         </Heading>
 
-        <HStack spacing={8} flex={1} justify="flex-end"> {/* Buttons on the right */}
+        <HStack spacing={8} flex={1} justify="flex-end">
           {user ? ( 
             <>
               <Button
