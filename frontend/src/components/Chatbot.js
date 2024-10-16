@@ -26,7 +26,6 @@ export default function Chatbot() {
   const chatContainerRef = useRef(null);
   const toast = useToast();
 
-  // Add this inside the component function, before the return statement
   const buttonColor = useColorModeValue('white', 'brand');
 
   useEffect(() => {
@@ -76,7 +75,7 @@ export default function Chatbot() {
   
         const botMessage = {
           role: 'assistant',
-          content: response,  // Changed from response.content to response
+          content: response,
         };
         
         // Update the local state with the bot's message
