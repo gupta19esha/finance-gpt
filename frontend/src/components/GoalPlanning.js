@@ -24,7 +24,7 @@ import {
   AccordionIcon,
   Divider,
   Flex,
-  useColorModeValue, // Import useColorModeValue
+  useColorModeValue,
 } from '@chakra-ui/react';
 
 const GoalPlanning = () => {
@@ -41,10 +41,10 @@ const GoalPlanning = () => {
     currentAmount: ''
   });
   const [editingGoalId, setEditingGoalId] = useState(null);
-  const [submitting, setSubmitting] = useState(false); // State to manage submission loading
+  const [submitting, setSubmitting] = useState(false);
   const toast = useToast();
 
-  // Define buttonColor using useColorModeValue
+
   const buttonColor = useColorModeValue('white', 'brand');
 
   useEffect(() => {
@@ -58,7 +58,7 @@ const GoalPlanning = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitting(true); // Start submission loading
+    setSubmitting(true);
 
     try {
       if (editingGoalId) {
@@ -86,7 +86,7 @@ const GoalPlanning = () => {
           isClosable: true,
       });
   } finally {
-      setSubmitting(false); // Stop submission loading
+      setSubmitting(false);
     }
   };
 
