@@ -16,14 +16,6 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.json());
 
-// Connect to MongoDB
-// mongoose.connect(process.env.MONGODB_URI, {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-// })
-// .then(() => console.log('Connected to MongoDB'))
-// .catch((err) => console.error('MongoDB connection error:', err));
-
 const mongoURI = process.env.NODE_ENV === 'test' 
   ? process.env.TEST_MONGODB_URI 
   : process.env.MONGODB_URI;
@@ -35,7 +27,6 @@ mongoose.connect(mongoURI, {
 .then(() => console.log('Connected to MongoDB'))
 .catch((err) => console.error('MongoDB connection error:', err));
 
-// Routes (to be added later)
 const authRoutes = require('./routes/auth');
 app.use('/api/auth', authRoutes);
 
