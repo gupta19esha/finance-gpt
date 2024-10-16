@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { useNavigate, Link as RouterLink } from 'react-router-dom';
 import { register } from '../services/api';
 import { setCredentials } from '../store/authSlice';
-import { Box, VStack, Heading, FormControl, FormLabel, Input, Button, Text, Link, Alert, AlertIcon, useColorModeValue, useToast } from '@chakra-ui/react'; // Import useColorModeValue
+import { Box, VStack, Heading, FormControl, FormLabel, Input, Button, Text, Link, Alert, AlertIcon, useColorModeValue, useToast } from '@chakra-ui/react'; 
 
 const Register = () => {
     const [username, setUsername] = useState('');
