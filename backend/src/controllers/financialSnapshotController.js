@@ -4,7 +4,7 @@ exports.createFinancialSnapshot = async (req, res) => {
   try {
     const newSnapshot = await FinancialSnapshot.create({
       ...req.body,
-      user: req.user._id // Assuming you have authentication middleware
+      user: req.user._id
     });
     res.status(201).json({
       status: 'success',
