@@ -30,7 +30,7 @@ AI-Driven Personal Finance Advisor is a web application that provides personaliz
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/ai-finance-advisor.git
+   git clone https://github.com/0xmetaschool/ai-finance-advisor.git
    cd ai-finance-advisor
    ```
 
