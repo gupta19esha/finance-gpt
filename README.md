@@ -1,4 +1,4 @@
-# AI-Driven Personal Finance Advisor
+# FinanceGPT
 
 AI-Driven Personal Finance Advisor is a web application that provides personalized financial advice and management tools using artificial intelligence. This project aims to help users make informed financial decisions, set and track financial goals, and improve their overall financial health.
 
