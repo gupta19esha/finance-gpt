@@ -13,7 +13,6 @@ FinanceGPT is a new app that helps you take control of your finances. It offers 
     - [How to run the project](#how-to-run-the-project)
   - [How to use the application](#how-to-use-the-application)
   - [Use cases and further enhanchements](#use-cases-and-further-enhanchements)
-  - [API Reference](#api-reference)
   - [Contributing](#contributing)
   - [License](#license)
   - [Acknowledgments](#acknowledgments)
@@ -100,16 +99,6 @@ You should now see the AI Powered FinanceGPT  application running with Next.js.
 5. Add support for cryptocurrency tracking and investment advice.
 6. etc, etc, etc...
 
-## API Reference
-
-| Endpoint | Method | Description |
-| --- | --- | --- |
-| `/api/auth/register` | POST | To register new user |
-| `/api/auth/login` | POST | To authenticate returning user |
-| `/api/financial-snapshot` | GET/PUT | To view/update user’s financial data |
-| `/api/financial-advice` | POST | To fetch financial advice based on the data provided |
-| `/api/goals` | GET/POST/PUT/DELETE | To fetch goal-based advice  |
-| `/api/chat` | POST | To fetch general chat response from OpenAI |
 
 ## Contributing
 
@@ -123,7 +112,7 @@ We love contributions! Here's how you can help make the FinanceGPT even better:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://www.notion.so/0xmetaschool/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/0xmetaschool/ai-finance-advisor/blob/main/LICENSE) file for details.
 
 ## Acknowledgments
 
