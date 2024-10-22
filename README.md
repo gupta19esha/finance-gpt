@@ -1,123 +1,131 @@
-# FinanceGPT
+# **FinanceGPT**
 
-AI-Driven Personal Finance Advisor is a web application that provides personalized financial advice and management tools using artificial intelligence. This project aims to help users make informed financial decisions, set and track financial goals, and improve their overall financial health.
+FinanceGPT is a new app that helps you take control of your finances. It offers personalized financial advice, similar to consulting with a human advisor. With features like AI chat and goal planning, FinanceGPT helps you achieve your financial goals. Powered by Next.js and OpenAI's GPT-4, this app provides tailored advice based on your unique financial situation.
+
+## Table of Contents
+
+- [**FinanceGPT**](#financegpt)
+  - [Table of Contents](#table-of-contents)
+  - [Live Demo](#live-demo)
+  - [Features](#features)
+  - [Technologies Used](#technologies-used)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [How to run the project](#how-to-run-the-project)
+  - [Screenshots](#screenshots)
+  - [How to use the application](#how-to-use-the-application)
+  - [Use cases and further enhanchements](#use-cases-and-further-enhanchements)
+  - [API Reference](#api-reference)
+  - [Contributing](#contributing)
+  - [License](#license)
+  - [Acknowledgments](#acknowledgments)
+  - [Contact](#contact)
+
+## Live Demo
+
+[Link to live demo - To be added]
 
 ## Features
 
 - User authentication and registration
-- Personalized financial advice using AI
-- Financial snapshot and goal tracking
 - AI-powered chatbot for financial queries
+- Personalized financial advice using AI
+- Financial snapshot and goal setting
 
 ## Technologies Used
 
-- Frontend: React.js with Chakra UI
-- Backend: Node.js with Express.js
+- React.js with Chakra UI
+- Next.js
 - Database: MongoDB
 - AI Integration: OpenAI's GPT-4
 - State Management: Redux Toolkit
 - Authentication: JSON Web Tokens (JWT)
 
-## Setup
+## Getting Started
 
 ### Prerequisites
 
-- Node.js (version 14 or later)
+- Next.js
 - MongoDB
 - OpenAI API key
 
-### Installation
+### How to run the project
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/0xmetaschool/ai-finance-advisor.git
-   cd ai-finance-advisor
-   ```
+**1. Clone the repository:**
 
-2. Install dependencies for both frontend and backend:
+```bash
+git clone https://github.com/0xmetaschool/ai-finance-advisor.git
+cd ai-finance-advisor
+```
 
-   - For the backend:
-      ```
-      cd backend
-      npm install express mongoose dotenv bcryptjs jsonwebtoken cors axios
-      ```
+**2. Install dependencies:**
 
-      This will install the following key dependencies:
-      - express: Web application framework
-      - mongoose: MongoDB object modeling tool
-      - dotenv: Loads environment variables from .env file
-      - bcryptjs: Library for hashing passwords
-      - jsonwebtoken: Implementation of JSON Web Tokens
-      - cors: Middleware for enabling CORS
-      - axios: Promise-based HTTP client for making API requests
+```bash
+npm install
+npm install react-icons
+```
 
+**3. Set up the database:**
 
-   - For the frontend:
-      ```
-      cd frontend
-      npm install react react-dom react-router-dom @reduxjs/toolkit
-      npm install react-redux @chakra-ui/react
-      npm install @emotion/react @emotion/styled
-      npm install framer-motion axios react-markdown recharts
-      ```
+Ensure you have [MongoDB](https://www.mongodb.com/) installed and running on your system, or use a cloud-hosted MongoDB service like [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database). Create a new Cluster, select a free plan, and copy the connection string, this will be required in the next step.
 
-      This will install the following key dependencies:
-      - react and react-dom: Core React libraries
-      - react-router-dom: Routing library for React
-      - @reduxjs/toolkit and react-redux: State management libraries
-      - @chakra-ui/react, @emotion/react, @emotion/styled, framer-motion: UI component library and its dependencies
-      - axios: Promise-based HTTP client for making API requests
-      - react-markdown: Markdown renderer for React
-      - recharts: Charting library for React
+**4. Set up environment variables:**
 
-3. Set up environment variables:
-   - Create a `.env` file in the `backend` directory
-   - Add the following variables:
-     ```
-     MONGODB_URI=your_mongodb_connection_string
-     JWT_SECRET=your_jwt_secret
-     OPENAI_API_KEY=your_openai_api_key
-     ```
+Create a `.env.local` file in the root directory and add the following variables:
 
-4. Start the backend server:
-   ```
-   cd backend
-   npm run dev
-   ```
+```
+NEXT_PUBLIC_API_URL=http://localhost:3000/api
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+OPENAI_API_KEY=your_openai_api_key
+```
 
-5. Start the frontend development server:
-   ```
-   cd frontend
-   npm start
-   ```
+**5. Run the development server:**
 
-6. Open your browser and navigate to `http://localhost:3000`
+```bash
+npm run dev
+```
 
-## Usage
+**7. Open your browser and navigate to `http://localhost:3000`**
 
-1. Register for a new account or log in if you already have one.
-2. Complete the onboarding process to set up your financial profile.
-3. Explore the different features:
-   - View your financial snapshot
-   - Set and track financial goals
-   - Get AI-powered financial advice
-   - Use the chatbot for quick financial queries
-   - Analyze what-if scenarios for financial planning
+You should now see the AI Powered FinanceGPT  application running with Next.js.
 
-## API Endpoints
+## Screenshots
 
-- `/api/auth/register` - User registration
-- `/api/auth/login` - User login
-- `/api/financial-snapshot` - Get and update financial snapshot
-- `/api/financial-advice` - Get AI-powered financial advice
-- `/api/goals` - CRUD operations for financial goals
-- `/api/chat` - AI chatbot interaction
+[2-3 screenshots to be added]
+
+## How to use the application
+
+1. Register for a new account or log in
+2. Complete the onboarding process to set up your financial profile
+3. Explore the financial snapshot dashboard
+4. Set financial goals and receive AI-powered strategies
+5. Use the chatbot for financial guidance
+
+## Use cases and further enhanchements
+1. Integrate with real-time financial data APIs to provide up-to-date market information and analysis.
+2. Implement a document upload feature for analyzing financial statements and tax returns.
+3. Create interactive financial education modules with quizzes and rewards.
+4. Implement a feature using which users can access older chats
+5. Add support for cryptocurrency tracking and investment advice.
+6. etc, etc, etc...
+
+## API Reference
+
+| Endpoint | Method | Description |
+| --- | --- | --- |
+| `/api/auth/register` | POST | To register new user |
+| `/api/auth/login` | POST | To authenticate returning user |
+| `/api/financial-snapshot` | GET/PUT | To view/update user’s financial data |
+| `/api/financial-advice` | POST | To fetch financial advice based on the data provided |
+| `/api/goals` | GET/POST/PUT/DELETE | To fetch goal-based advice  |
+| `/api/chat` | POST | To fetch general chat response from OpenAI |
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+We love contributions! Here's how you can help make the FinanceGPT even better:
 
-1. Fork the project
+1. Fork the project (`gh repo fork https://github.com/0xmetaschool/ai-finance-advisor.git`)
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
@@ -125,7 +133,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/0xmetaschool/ai-finance-advisor/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://www.notion.so/0xmetaschool/LICENSE) file for details.
 
 ## Acknowledgments
 
@@ -134,15 +142,4 @@ This project is licensed under the MIT License. See the [LICENSE](https://github
 
 ## Contact
 
-For any queries or support, please open an issue in the GitHub repository.
-
----
-
-## Future Enhancements
-
-- Integration with real financial institutions for automatic data import
-- Advanced data visualization and reporting
-- Machine learning models for predictive financial analysis
-- Multi-language support
-
-We encourage community feedback and contributions to these potential features!
+Please open an issue in the GitHub repository for any queries or support.
