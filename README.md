@@ -6,13 +6,11 @@ FinanceGPT is a new app that helps you take control of your finances. It offers 
 
 - [**FinanceGPT**](#financegpt)
   - [Table of Contents](#table-of-contents)
-  - [Live Demo](#live-demo)
   - [Features](#features)
   - [Technologies Used](#technologies-used)
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [How to run the project](#how-to-run-the-project)
-  - [Screenshots](#screenshots)
   - [How to use the application](#how-to-use-the-application)
   - [Use cases and further enhanchements](#use-cases-and-further-enhanchements)
   - [API Reference](#api-reference)
@@ -20,10 +18,6 @@ FinanceGPT is a new app that helps you take control of your finances. It offers 
   - [License](#license)
   - [Acknowledgments](#acknowledgments)
   - [Contact](#contact)
-
-## Live Demo
-
-[Link to live demo - To be added]
 
 ## Features
 
@@ -86,13 +80,9 @@ OPENAI_API_KEY=your_openai_api_key
 npm run dev
 ```
 
-**7. Open your browser and navigate to `http://localhost:3000`**
+**6. Open your browser and navigate to `http://localhost:3000`**
 
 You should now see the AI Powered FinanceGPT  application running with Next.js.
-
-## Screenshots
-
-[2-3 screenshots to be added]
 
 ## How to use the application
 
