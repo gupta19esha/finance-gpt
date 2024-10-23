@@ -58,11 +58,11 @@ npm install
 npm install react-icons
 ```
 
-**3. Set up the database:**
+#### 3. Set up the database:
 
 Ensure you have [MongoDB](https://www.mongodb.com/) installed and running on your system, or use a cloud-hosted MongoDB service like [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database). Create a new Cluster, select a free plan, and copy the connection string, this will be required in the next step.
 
-**4. Set up environment variables:**
+#### 4. Set up environment variables:
 
 Create a `.env.local` file in the root directory and add the following variables:
 
@@ -73,13 +73,13 @@ JWT_SECRET=your_jwt_secret
 OPENAI_API_KEY=your_openai_api_key
 ```
 
-**5. Run the development server:**
+#### 5. Run the development server:
 
 ```bash
 npm run dev
 ```
 
-**6. Open your browser and navigate to `http://localhost:3000`**
+#### 6. Open your browser and navigate to `http://localhost:3000`
 
 You should now see the AI Powered FinanceGPT  application running with Next.js.
 
