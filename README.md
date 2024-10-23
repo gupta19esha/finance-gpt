@@ -1,22 +1,28 @@
-# FinanceGPT
+# **FinanceGPT**
 
 FinanceGPT is a new app that helps you take control of your finances. It offers personalized financial advice, similar to consulting with a human advisor. With features like AI chat and goal planning, FinanceGPT helps you achieve your financial goals. Powered by Next.js and OpenAI's GPT-4, this app provides tailored advice based on your unique financial situation.
 
 ## Table of Contents
 
-- [FinanceGPT](#financegpt)
+- [**FinanceGPT**](#financegpt)
   - [Table of Contents](#table-of-contents)
+  - [Live Demo](#live-demo)
   - [Features](#features)
   - [Technologies Used](#technologies-used)
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [How to run the project](#how-to-run-the-project)
+  - [Screenshots](#screenshots)
   - [How to use the application](#how-to-use-the-application)
   - [Use cases and further enhanchements](#use-cases-and-further-enhanchements)
   - [Contributing](#contributing)
   - [License](#license)
   - [Acknowledgments](#acknowledgments)
   - [Contact](#contact)
+
+## Live Demo
+
+Live demo - [FinanceGPT](https://ai-finance-advisor-tawny.vercel.app/)
 
 ## Features
 
@@ -44,25 +50,24 @@ FinanceGPT is a new app that helps you take control of your finances. It offers 
 
 ### How to run the project
 
-#### 1. Clone the repository:
+**1. Clone the repository:**
 
 ```bash
 git clone https://github.com/0xmetaschool/ai-finance-advisor.git
 cd ai-finance-advisor
 ```
 
-#### 2. Install dependencies:
+**2. Install dependencies:**
 
 ```bash
 npm install
-npm install react-icons
 ```
 
-#### 3. Set up the database:
+**3. Set up the database:**
 
 Ensure you have [MongoDB](https://www.mongodb.com/) installed and running on your system, or use a cloud-hosted MongoDB service like [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database). Create a new Cluster, select a free plan, and copy the connection string, this will be required in the next step.
 
-#### 4. Set up environment variables:
+**4. Set up environment variables:**
 
 Create a `.env.local` file in the root directory and add the following variables:
 
@@ -73,15 +78,19 @@ JWT_SECRET=your_jwt_secret
 OPENAI_API_KEY=your_openai_api_key
 ```
 
-#### 5. Run the development server:
+**5. Run the development server:**
 
 ```bash
 npm run dev
 ```
 
-#### 6. Open your browser and navigate to `http://localhost:3000`
+**6. Open your browser and navigate to `http://localhost:3000`**
 
 You should now see the AI Powered FinanceGPT  application running with Next.js.
+
+## Screenshots
+
+<img src="https://github.com/0xmetaschool/ai-finance-advisor/blob/main/public/images/FinanceGPT%201.png?raw=true" width="400" height="300"> <img src="https://github.com/0xmetaschool/ai-finance-advisor/blob/main/public/images/FinanceGPT%202.png?raw=true" width="400" height="300">
 
 ## How to use the application
 
@@ -112,7 +121,7 @@ We love contributions! Here's how you can help make the FinanceGPT even better:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/0xmetaschool/ai-finance-advisor/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://www.notion.so/0xmetaschool/LICENSE) file for details.
 
 ## Acknowledgments
 
