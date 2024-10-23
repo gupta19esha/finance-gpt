@@ -44,14 +44,14 @@ FinanceGPT is a new app that helps you take control of your finances. It offers 
 
 ### How to run the project
 
-**1. Clone the repository:**
+#### 1. Clone the repository:
 
 ```bash
 git clone https://github.com/0xmetaschool/ai-finance-advisor.git
 cd ai-finance-advisor
 ```
 
-**2. Install dependencies:**
+#### 2. Install dependencies:
 
 ```bash
 npm install
