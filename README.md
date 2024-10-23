@@ -1,4 +1,4 @@
-# **FinanceGPT**
+# FinanceGPT
 
 FinanceGPT is a new app that helps you take control of your finances. It offers personalized financial advice, similar to consulting with a human advisor. With features like AI chat and goal planning, FinanceGPT helps you achieve your financial goals. Powered by Next.js and OpenAI's GPT-4, this app provides tailored advice based on your unique financial situation.
 
