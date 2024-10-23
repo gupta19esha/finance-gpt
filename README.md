@@ -4,7 +4,7 @@ FinanceGPT is a new app that helps you take control of your finances. It offers 
 
 ## Table of Contents
 
-- [**FinanceGPT**](#financegpt)
+- [FinanceGPT](#financegpt)
   - [Table of Contents](#table-of-contents)
   - [Features](#features)
   - [Technologies Used](#technologies-used)
