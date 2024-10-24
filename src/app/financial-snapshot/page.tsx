@@ -35,6 +35,8 @@ const FinancialSnapshot = () => {
   const user = useSelector((state: RootState) => state.auth.user);
   const [isEditing, setIsEditing] = useState(false);
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  // State for managing financial data
   const [financialData, setFinancialData] = useState({
     annualIncome: user?.annualIncome || 0,
     currentSavings: user?.currentSavings || 0,
@@ -42,28 +44,33 @@ const FinancialSnapshot = () => {
     financialGoals: [...user?.financialGoals || []],
     riskTolerance: user?.riskTolerance || 'medium'
   });
+  
   const [netWorth, setNetWorth] = useState(0);
   const [financialHealthScore, setFinancialHealthScore] = useState(0);
 
   const buttonColor = useColorModeValue('white', 'brand');
 
   useEffect(() => {
+    // Calculate net worth and financial health score when financial data changes
     calculateNetWorth();
     calculateFinancialHealthScore();
   }, [financialData]);
 
+  // Calculates the user's net worth.
   const calculateNetWorth = () => {
     const totalAssets = financialData.currentSavings;
-    const totalLiabilities = 0;
+    const totalLiabilities = 0; 
     setNetWorth(totalAssets - totalLiabilities);
   };
 
+  // Calculates the user's financial health score.
   const calculateFinancialHealthScore = () => {
     const savingsRatio = financialData.currentSavings / financialData.annualIncome;
     const score = Math.min(Math.round(savingsRatio * 100), 100);
     setFinancialHealthScore(score);
   };
 
+  // Handles changes in input fields.
   const handleInputChange = (e: React.ChangeEvent<HTMLSelectElement | HTMLInputElement>) => { 
     const { name, value } = e.target;
     setFinancialData(prev => ({
@@ -72,6 +79,7 @@ const FinancialSnapshot = () => {
     }));
   };
 
+  // Handles changes in monthly expense inputs.
   const handleExpenseChange = (category: string, value: string) => {
     setFinancialData(prev => ({
       ...prev,
@@ -82,6 +90,7 @@ const FinancialSnapshot = () => {
     }));
   };
 
+  // Handles changes in financial goals selection.
   const handleGoalChange = (goal: string) => {
     setFinancialData(prev => ({
       ...prev,
@@ -98,6 +107,7 @@ const FinancialSnapshot = () => {
 
   const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884D8'];
 
+  // Prepares data for the expense pie chart.
   const prepareExpenseData = () => {
     return Object.entries(financialData.monthlyExpenses)
       .map(([name, value]) => ({ name, value }))
@@ -107,6 +117,8 @@ const FinancialSnapshot = () => {
   const expenseData = prepareExpenseData();
 
   const RADIAN = Math.PI / 180;
+
+  // Customizes the labels on the pie chart.
   const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }: any) => {
     const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
     const x = cx + radius * Math.cos(-midAngle * RADIAN);
@@ -123,7 +135,6 @@ const FinancialSnapshot = () => {
     { name: 'Annual Income', value: financialData.annualIncome },
     { name: 'Current Savings', value: financialData.currentSavings },
   ];
-
 
   return (
     <Container maxW="container.xl" py={10}>
