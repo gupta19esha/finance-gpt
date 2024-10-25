@@ -22,7 +22,7 @@ FinanceGPT is a new app that helps you take control of your finances. It offers 
 
 ## Live Demo
 
-Live demo - [FinanceGPT](https://ai-finance-advisor-tawny.vercel.app/)
+Live demo - [FinanceGPT](https://finance-gpt-pi.vercel.app/)
 
 ## Features
 
