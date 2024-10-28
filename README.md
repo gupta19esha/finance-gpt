@@ -14,7 +14,7 @@ FinanceGPT is a new app that helps you take control of your finances. It offers 
     - [How to run the project](#how-to-run-the-project)
   - [Screenshots](#screenshots)
   - [How to use the application](#how-to-use-the-application)
-  - [Use cases and further enhanchements](#use-cases-and-further-enhanchements)
+  - [Use cases and further enhancements](#use-cases-and-further-enhanchements)
   - [Contributing](#contributing)
   - [License](#license)
   - [Acknowledgments](#acknowledgments)
