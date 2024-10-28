@@ -53,8 +53,8 @@ Live demo - [FinanceGPT](https://finance-gpt-pi.vercel.app/)
 **1. Clone the repository:**
 
 ```bash
-git clone https://github.com/0xmetaschool/ai-finance-advisor.git
-cd ai-finance-advisor
+git clone https://github.com/0xmetaschool/finance-gpt.git
+cd finance-gpt
 ```
 
 **2. Install dependencies:**
@@ -86,7 +86,7 @@ npm run dev
 
 **6. Open your browser and navigate to `http://localhost:3000`**
 
-You should now see the AI Powered FinanceGPT  application running with Next.js.
+You should now see the AI-powered FinanceGPT  application running with Next.js.
 
 ## Screenshots
 
@@ -121,7 +121,7 @@ We love contributions! Here's how you can help make the FinanceGPT even better:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://www.notion.so/0xmetaschool/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/0xmetaschool/finance-gpt/blob/main/LICENSE) file for details.
 
 ## Acknowledgments
 
